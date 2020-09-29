@@ -1,0 +1,25 @@
+一、PO使用思路梳理
+二、pytest脚本运行顺序
+1、安装插件：pip3 install pytest-ordering（命令行方式） python setup.py install（安装包方式）
+2、使用方法：
+1)、标记于被测试函数@pytest.mark.run(order=x)
+2)、根据order传入的参数来解决运行顺序
+3)、order值全为正数或者负数时，运行顺序，值越小，优先级越高
+4)、正数和负数同时存在，正数优先级高
+3、默认情况下，pytest是根据测试方法名由小到大执行的，可以通过第三方插件包改变其运行顺序
+
+三、装饰器fixture标记固定的工厂函数，在其他函数、模块、类或整个工程调用它时会被激活并优先执行。通常会被用于完成预置处理和重复操作；
+四、断言
+五、pytest配置文件
+六、yaml数据驱动
+七、allure报告：是一个独立的报告插件
+1、安装插件：pip3 install pytest-allure-adaptor
+2、帮助文档：https://
+3、生成allure报告 命令行参数： pytest --alluredir report #在执行命令目录生成report文件夹，文件夹下包含xml文件
+八、Jenkins：
+1、Jenkins URL：http://localhost:8080/  用户名：liangxiaohui 密码：lz3431060
+九、GitHub：用户名：lxh-first 密码同上
+   .gitconfig:
+   name = lxh
+   email = xhmother@126.com
+十、pydoc 生成项目文档 python3 -m pydoc -b
