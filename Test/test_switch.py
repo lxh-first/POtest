@@ -48,7 +48,7 @@ class Test_switch:
         #self.obj.click_tab()
         status = self.obj.check_WLANSwitch()
         print("WLANstatus:",status)
-        assert status, "判断Wifi开关状态是打开的，当前状态是：%s" % status
+        assert status, "判断Wifi开关状态是打开的，当前wifi状态是：%s" % status
 
     @pytest.mark.run(order=3)
     def test_BlueSwitch(self):
